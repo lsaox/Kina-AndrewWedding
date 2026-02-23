@@ -18,3 +18,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".details-card");
+
+    // Only apply hover behavior on devices that actually support hover (desktops)
+    const prefersHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+    if (!prefersHover) {
+      // On touch devices, let <details> behave normally (tap to open/close)
+      return;
+    }
+
+    cards.forEach(card => {
+      let timeout;
+
+      card.addEventListener("mouseenter", () => {
+        clearTimeout(timeout);
+        card.open = true;
+      });
+
+      card.addEventListener("mouseleave", () => {
+        timeout = setTimeout(() => {
+          card.open = false;
+        }, 300);
+      });
+    });
+  });
