@@ -351,26 +351,6 @@
   </main>
 
   <!-- Hover to open smoothly -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const cards = document.querySelectorAll(".details-card");
-
-      cards.forEach(card => {
-        let timeout;
-
-        card.addEventListener("mouseenter", () => {
-          clearTimeout(timeout);
-          card.open = true;
-        });
-
-        card.addEventListener("mouseleave", () => {
-          timeout = setTimeout(() => {
-            card.open = false;
-          }, 300);
-        });
-      });
-    });
-  </script>
-
+  
 </body>
 </html>
