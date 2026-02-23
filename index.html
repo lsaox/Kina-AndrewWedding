@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Katalina & Andrew • Wedding</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mint: "#9bb8a7",      // soft sage
+            mintDeep: "#6b8f71",  // deeper sage
+            mintSoft: "#f5faf7",  // very light background
+            inkSoft: "#374151"    // calm ink
+          },
+          fontFamily: {
+            script: ['"Great Vibes"', "cursive"],
+            serifDisplay: ['"Playfair Display"', "serif"],
+            body: ['"Inter"', "system-ui", "sans-serif"],
+          },
+          boxShadow: {
+            soft: "0 24px 60px rgba(15,23,42,0.10)"
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Custom JS -->
+  <script src="script.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-mintSoft text-inkSoft relative">
+
+  <!-- Header -->
+  <header class="bg-white/80 border-b border-mint/15 backdrop-blur-sm relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 py-4 flex justify-center">
+      <span class="text-xs sm:text-sm tracking-[0.18em] uppercase text-inkSoft/80">
+        Katalina &amp; Andrew’s Wedding
+      </span>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto relative z-0">
+
+    <!-- Hero -->
+    <section class="w-full">
+      <div class="w-full h-[260px] sm:h-[360px] md:h-[420px] lg:h-[460px] overflow-hidden rounded-b-3xl shadow-soft/40">
+        <img src="assets/image.png" alt="Katalina and Andrew" class="w-full h-full object-cover" />
+      </div>
+    </section>
+
+    <!-- Names Card -->
+    <section class="relative px-4 sm:px-8">
+      <div class="relative max-w-3xl mx-auto -mt-16 sm:-mt-24 fade-in-up">
+
+        <div class="absolute inset-0 rounded-3xl overflow-hidden">
+          <img src="assets/f.png" alt="" class="w-full h-full object-cover opacity-20" />
+        </div>
+
+        <div class="relative bg-white/95 rounded-3xl shadow-soft border border-mint/30 px-6 sm:px-10 py-10 sm:py-12 text-center">
+
+          <p class="font-script text-mint text-2xl sm:text-3xl mb-2">
+            Celebrating
+          </p>
+
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-serifDisplay text-inkSoft tracking-[0.12em] uppercase leading-relaxed">
+            Katalina
+          </h1>
+
+          <p class="font-script text-mint text-3xl sm:text-4xl my-1">
+            and
+          </p>
+
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-serifDisplay text-inkSoft tracking-[0.12em] uppercase leading-relaxed">
+            Andrew
+          </h2>
+
+          <p class="mt-5 font-script text-mint text-2xl sm:text-3xl">
+            March 27, 2026
+          </p>
+          <p class="mt-1 text-xs sm:text-sm text-inkSoft/70">
+            Hendrick House • Lewisville, Texas
+          </p>
+
+          <!-- Buttons -->
+          <div class="mt-7 space-y-3">
+            <a
+              href="#rsvp"
+              class="inline-flex items-center justify-center rounded-full bg-mintDeep px-9 py-2.5 text-xs sm:text-sm tracking-[0.18em] uppercase text-[#fdfdfc] hover:bg-mint transition-colors"
+            >
+              RSVP
+            </a>
+
+            <a
+              href="#details"
+              class="inline-flex items-center justify-center rounded-full border border-mintDeep/70 px-9 py-2.5 text-xs sm:text-sm tracking-[0.18em] uppercase text-mintDeep hover:bg-mintSoft hover:border-mintDeep transition-colors"
+            >
+              Details
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Wedding Details -->
+    <section id="details" class="px-4 sm:px-8 mt-16 sm:mt-20">
+
+      <div class="max-w-4xl mx-auto text-center mb-10 fade-in-up fade-delay-1">
+        <p class="text-xs tracking-[0.22em] uppercase text-mintDeep/80 mb-2">
+          Wedding Details
+        </p>
+        <h3 class="text-xl sm:text-2xl font-serifDisplay text-inkSoft">
+          A calm evening of celebrating, laughing, and dancing together.
+        </h3>
+      </div>
+
+      <div class="max-w-4xl mx-auto grid gap-6 sm:gap-8 md:grid-cols-3 fade-in-up fade-delay-1">
+
+        <!-- When -->
+        <details
+          class="group border border-mint/30 rounded-2xl bg-white/95 px-5 py-4 text-center shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-soft hover:bg-white hover:border-mintDeep/50"
+        >
+          <summary
+            class="cursor-pointer text-sm font-medium text-inkSoft/90 flex items-center justify-center gap-2 transition-colors duration-200 group-hover:text-mintDeep"
+          >
+            <span>When</span>
+            <span
+              class="text-mintDeep/60 text-lg leading-none transition-transform duration-200 group-open:rotate-180 transition-colors group-hover:text-mintDeep"
+            >
+              ▾
+            </span>
+          </summary>
+          <div class="mt-3 text-sm text-inkSoft/80 leading-relaxed">
+            Friday, March 27, 2026<br />
+            Ceremony at 4:00 PM<br />
+            Reception to follow
+          </div>
+        </details>
+
+        <!-- Where -->
+        <details
+          class="group border border-mint/30 rounded-2xl bg-white/95 px-5 py-4 text-center shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-soft hover:bg-white hover:border-mintDeep/50"
+        >
+          <summary
+            class="cursor-pointer text-sm font-medium text-inkSoft/90 flex items-center justify-center gap-2 transition-colors duration-200 group-hover:text-mintDeep"
+          >
+            <span>Where</span>
+            <span
+              class="text-mintDeep/60 text-lg leading-none transition-transform duration-200 group-open:rotate-180 transition-colors group-hover:text-mintDeep"
+            >
+              ▾
+            </span>
+          </summary>
+          <div class="mt-3 text-sm text-inkSoft/80 leading-relaxed">
+            Hendrick House<br />
+            1407 Creekview Dr<br />
+            Lewisville, TX 75067
+          </div>
+        </details>
+
+        <!-- Attire -->
+        <details
+          class="group border border-mint/30 rounded-2xl bg-white/95 px-5 py-4 text-center shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-soft hover:bg-white hover:border-mintDeep/50"
+        >
+          <summary
+            class="cursor-pointer text-sm font-medium text-inkSoft/90 flex items-center justify-center gap-2 transition-colors duration-200 group-hover:text-mintDeep"
+          >
+            <span>Attire</span>
+            <span
+              class="text-mintDeep/60 text-lg leading-none transition-transform duration-200 group-open:rotate-180 transition-colors group-hover:text-mintDeep"
+            >
+              ▾
+            </span>
+          </summary>
+          <div class="mt-3 text-sm text-inkSoft/80 leading-relaxed">
+            Semi-formal.<br />
+            Soft, spring colors welcome.<br />
+            We kindly ask for no jeans.
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="px-4 sm:px-8 mt-16 sm:mt-20 mb-16 sm:mb-20">
+      <div class="max-w-5xl mx-auto bg-white/95 rounded-3xl shadow-soft border border-mint/30 overflow-hidden fade-in-up fade-delay-2">
+
+        <div class="flex flex-col md:flex-row">
+
+          <!-- Left: photo -->
+          <div class="md:w-1/2 h-64 md:h-auto">
+            <img src="assets/ring.png" alt="Rings" class="w-full h-full object-cover" />
+          </div>
+
+          <!-- Right: card-style form -->
+          <div class="md:w-1/2 px-6 sm:px-8 py-8 sm:py-10 flex items-center">
+            <form
+              name="rsvp"
+              method="POST"
+              data-netlify="true"
+              class="w-full space-y-5"
+            >
+              <input type="hidden" name="form-name" value="rsvp" />
+
+              <!-- Heading -->
+              <div class="pb-4 border-b border-mint/25 mb-2">
+                <p class="text-xs tracking-[0.22em] uppercase text-mintDeep/80 mb-1">
+                  Kindly
+                </p>
+                <h3 class="text-2xl sm:text-3xl font-serifDisplay tracking-[0.14em] uppercase text-inkSoft">
+                  RSVP
+                </h3>
+                <p class="mt-1 text-[11px] sm:text-xs text-inkSoft/60">
+                  Please kindly reply by March 1st
+                </p>
+              </div>
+
+              <!-- Name -->
+              <div>
+                <label class="block text-[11px] font-medium tracking-[0.12em] uppercase text-inkSoft/80 mb-1">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  class="w-full border-b border-[#c8ddcf] bg-transparent px-0 py-1.5 text-sm text-inkSoft placeholder:text-inkSoft/40 focus:outline-none focus:border-mintDeep"
+                  placeholder="First & last name"
+                />
+              </div>
+
+              <!-- Email (optional) -->
+              <div>
+                <label class="block text-[11px] font-medium tracking-[0.12em] uppercase text-inkSoft/80 mb-1">
+                  Email (optional)
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  class="w-full border-b border-[#c8ddcf] bg-transparent px-0 py-1.5 text-sm text-inkSoft placeholder:text-inkSoft/40 focus:outline-none focus:border-mintDeep"
+                  placeholder="you@example.com"
+                />
+              </div>
+
+              <!-- Attendance -->
+              <div class="space-y-2">
+                <p class="text-[11px] tracking-[0.14em] uppercase text-inkSoft/80">
+                  Will you be attending?
+                </p>
+                <label class="flex items-center gap-2 text-sm text-inkSoft">
+                  <input
+                    type="radio"
+                    name="attendance"
+                    value="Yes"
+                    required
+                    class="h-3.5 w-3.5 border border-slate-300 text-mintDeep"
+                  />
+                  <span>Yes!</span>
+                </label>
+                <label class="flex items-center gap-2 text-sm text-inkSoft">
+                  <input
+                    type="radio"
+                    name="attendance"
+                    value="No"
+                    class="h-3.5 w-3.5 border border-slate-300 text-mintDeep"
+                  />
+                  <span>No, sadly can’t make it.</span>
+                </label>
+              </div>
+
+              <!-- Plus one question -->
+              <div class="space-y-2 pt-1">
+                <p class="text-[11px] tracking-[0.14em] uppercase text-inkSoft/80">
+                  Are you bringing a plus one?
+                </p>
+                <label class="flex items-center gap-2 text-sm text-inkSoft">
+                  <input
+                    type="radio"
+                    name="plus_one"
+                    value="Yes"
+                    class="h-3.5 w-3.5 border border-slate-300 text-mintDeep"
+                  />
+                  <span>Yes</span>
+                </label>
+                <label class="flex items-center gap-2 text-sm text-inkSoft">
+                  <input
+                    type="radio"
+                    name="plus_one"
+                    value="No"
+                    class="h-3.5 w-3.5 border border-slate-300 text-mintDeep"
+                  />
+                  <span>No</span>
+                </label>
+              </div>
+
+              <!-- Plus one name (hidden until Yes) -->
+              <div id="plusOneNameWrapper" class="hidden">
+                <label class="block text-[11px] font-medium tracking-[0.12em] uppercase text-inkSoft/80 mb-1">
+                  Plus one name
+                </label>
+                <input
+                  type="text"
+                  name="plus_one_name"
+                  class="w-full border-b border-[#c8ddcf] bg-transparent px-0 py-1.5 text-sm text-inkSoft placeholder:text-inkSoft/40 focus:outline-none focus:border-mintDeep"
+                  placeholder="Their first & last name"
+                />
+              </div>
+
+              <!-- Notes -->
+              <div>
+                <label class="block text-[11px] font-medium tracking-[0.12em] uppercase text-inkSoft/80 mb-1">
+                  Notes (dietary, song requests, etc.)
+                </label>
+                <textarea
+                  name="notes"
+                  rows="2"
+                  class="w-full border-b border-[#c8ddcf] bg-transparent px-0 py-1.5 text-sm text-inkSoft placeholder:text-inkSoft/40 focus:outline-none focus:border-mintDeep resize-none"
+                  placeholder="Anything we should know?"
+                ></textarea>
+              </div>
+
+              <!-- Submit -->
+              <div class="pt-1">
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center rounded-full border border-mintDeep px-7 py-2 text-[11px] tracking-[0.2em] uppercase text-mintDeep hover:bg-mintDeep hover:text-[#fdfdfc] transition-colors"
+                >
+                  Submit RSVP
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="px-4 sm:px-8 pb-8 pt-6 bg-white/90 text-center text-xs text-inkSoft/70 rounded-t-3xl">
+      <p>Made with love for Katalina &amp; Andrew’s wedding day.</p>
+      <p class="mt-1 text-[10px] text-inkSoft/50">
+        Made by her cool older brother.
+      </p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
