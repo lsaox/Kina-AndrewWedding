@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You • Katalina & Andrew</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mint: "#9bb8a7",
+            mintDeep: "#6b8f71",
+            mintSoft: "#f5faf7",
+            inkSoft: "#374151"
+          },
+          fontFamily: {
+            script: ['"Great Vibes"', "cursive"],
+            serifDisplay: ['"Playfair Display"', "serif"],
+            body: ['"Inter"', "system-ui", "sans-serif"],
+          },
+          boxShadow: {
+            soft: "0 24px 60px rgba(15,23,42,0.10)"
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-mintSoft text-inkSoft flex items-center justify-center px-4">
+
+  <div class="max-w-md w-full bg-white/95 rounded-3xl shadow-soft border border-mint/30 px-8 py-10 text-center">
+    <p class="font-script text-mint text-3xl mb-2">
+      Thank you
+    </p>
+    <h1 class="text-2xl sm:text-3xl font-serifDisplay tracking-[0.14em] uppercase text-inkSoft mb-4">
+      We’ve received your RSVP
+    </h1>
+    <p class="text-sm text-inkSoft/75 mb-6">
+      We are so grateful you’re part of our day.  
+      You’ll receive any updates or details at the contact info you provided.
+    </p>
+
+    <a
+      href="index.html"
+      class="inline-flex items-center justify-center rounded-full border border-mintDeep px-8 py-2 text-[11px] tracking-[0.2em] uppercase text-mintDeep hover:bg-mintDeep hover:text-[#fdfdfc] transition-colors"
+    >
+      Back to Website
+    </a>
+  </div>
+
+</body>
+</html>
